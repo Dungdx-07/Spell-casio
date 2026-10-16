@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#040712">
+<meta name="description" content="Dungdx Casio Spell — công cụ hướng dẫn Spell cho CASIO fx-580VN X, chạy trực tiếp trong trình duyệt.">
+<title>Dungdx · Casio Spell RGB Mystic</title>
+<style>
+:root{color-scheme:dark;--bg:#050b18;--panel:#0c1931;--panel2:#0a1428;--line:rgba(143,183,255,.18);--text:#edf5ff;--muted:#99aecb;--blue:#75baff;--cyan:#6ce7f6;--violet:#a89aff;--good:#93f0d3;--bad:#ffb6c0;--shadow:0 24px 70px rgba(0,0,0,.28)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 9% 0%,rgba(45,117,226,.22),transparent 38%),radial-gradient(ellipse at 95% 18%,rgba(128,82,255,.14),transparent 35%),var(--bg);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text)}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:radial-gradient(#9dcaff 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(#000,transparent 88%)}button,input,textarea{font:inherit}button{cursor:pointer}a{color:inherit}.wrap{width:min(100% - 28px,980px);margin:0 auto;position:relative}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0 12px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:0}.mark{width:45px;height:45px;flex:0 0 45px;display:grid;place-items:center;border:1px solid rgba(120,189,255,.4);border-radius:15px;background:linear-gradient(145deg,rgba(84,163,255,.3),rgba(144,108,255,.13));box-shadow:0 0 28px rgba(73,145,255,.12)}.mark svg{width:26px;height:26px}.brand-name{font-size:16px;font-weight:950;letter-spacing:.13em;line-height:1.1}.brand-name small{display:block;margin-top:5px;color:var(--muted);font-size:10px;font-weight:750;letter-spacing:.17em}.status{display:flex;align-items:center;gap:7px;border:1px solid rgba(108,231,246,.2);background:rgba(108,231,246,.06);border-radius:999px;padding:8px 11px;color:#b7f4fa;font-size:11px;font-weight:850;white-space:nowrap}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px rgba(108,231,246,.8)}.hero{text-align:center;padding:22px 0 24px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;border:1px solid rgba(117,186,255,.25);background:rgba(62,127,221,.09);color:#b7dbff;font-size:10px;font-weight:850;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:clamp(32px,7vw,53px);line-height:1.03;letter-spacing:-.055em;margin:17px 0 12px;font-weight:950}.gradient{background:linear-gradient(90deg,#f4f9ff,#85caff 47%,#b7a8ff);-webkit-background-clip:text;background-clip:text;color:transparent}.desc{max-width:620px;margin:0 auto;color:var(--muted);font-size:14px;line-height:1.75}.chips{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:16px}.chip{font-size:11px;color:#cce2ff;border:1px solid var(--line);background:rgba(7,18,39,.72);padding:8px 10px;border-radius:10px}.workspace{border:1px solid rgba(127,179,255,.25);border-radius:24px;background:linear-gradient(180deg,rgba(13,28,55,.97),rgba(8,18,36,.99));box-shadow:var(--shadow);overflow:hidden}.nav{display:flex;gap:7px;padding:12px;border-bottom:1px solid var(--line);background:rgba(4,12,27,.42)}.nav-btn{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:7px;padding:11px 10px;border-radius:12px;border:1px solid transparent;background:transparent;color:#9fb4d3;font-size:12px;font-weight:850;transition:.18s}.nav-btn.active{background:linear-gradient(135deg,rgba(67,144,242,.22),rgba(144,111,255,.13));border-color:rgba(117,186,255,.3);color:#eff7ff;box-shadow:0 5px 18px rgba(48,123,220,.1)}.content{padding:clamp(15px,3.8vw,28px)}.view[hidden]{display:none!important}.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:18px}.section-head h2{font-size:20px;letter-spacing:-.025em;margin:0 0 6px}.section-head p{margin:0;color:var(--muted);font-size:12px;line-height:1.65}.mini-tag{flex:0 0 auto;border:1px solid var(--line);border-radius:10px;padding:7px 9px;background:rgba(4,13,29,.5);color:#bedaff;font-size:10px;font-weight:850}.field-label{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:12px;font-weight:850;margin-bottom:9px;color:#d9eaff}.counter{color:var(--muted);font-size:11px;font-weight:750;font-variant-numeric:tabular-nums}.textarea-wrap{position:relative}.spell-input{display:block;width:100%;resize:vertical;min-height:112px;max-height:280px;padding:15px 15px;border-radius:15px;border:1px solid rgba(117,186,255,.23);background:rgba(3,10,23,.65);color:#f4f8ff;outline:none;font-size:16px;line-height:1.6;transition:.18s}.spell-input:focus{border-color:rgba(108,198,255,.75);box-shadow:0 0 0 3px rgba(85,166,255,.1)}.spell-input::placeholder{color:#657c9f}.field-note{margin:8px 0 0;color:#8299ba;font-size:11px;line-height:1.6}.examples{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:13px}.examples span{color:var(--muted);font-size:11px;margin-right:2px}.example{border:1px solid var(--line);border-radius:999px;padding:7px 10px;background:rgba(6,17,36,.75);color:#bad9ff;font-size:11px;font-weight:750}.example:hover{border-color:rgba(117,186,255,.55);background:rgba(55,119,207,.15)}.actions{display:flex;gap:9px;margin-top:19px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:43px;padding:11px 15px;border-radius:12px;border:1px solid var(--line);font-size:12px;font-weight:900;transition:transform .15s,border-color .15s,filter .15s}.btn:active{transform:scale(.98)}.btn-primary{flex:1;border-color:rgba(121,190,255,.55);background:linear-gradient(110deg,#448ef0,#716cf3);color:white;box-shadow:0 9px 25px rgba(57,120,235,.22)}.btn-primary:disabled{opacity:.42;cursor:not-allowed;filter:grayscale(.3)}.btn-secondary{background:rgba(4,13,29,.55);color:#d5e6ff}.btn-secondary:hover,.btn-copy:hover{border-color:rgba(117,186,255,.5)}.error{margin-top:13px;padding:11px 13px;border:1px solid rgba(255,130,150,.25);border-radius:12px;background:rgba(104,24,46,.16);color:var(--bad);font-size:12px;line-height:1.55}.error[hidden]{display:none}.result-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:24px 0 12px;padding-top:19px;border-top:1px solid var(--line)}.result-head h3{margin:0;font-size:16px}.result-head p{color:var(--muted);font-size:11px;margin:5px 0 0}.result-actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.btn-copy{min-height:34px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:rgba(4,13,29,.55);color:#cde3ff;font-size:10px;font-weight:850}.steps{display:grid;gap:10px}.step{border:1px solid rgba(126,173,240,.16);border-radius:15px;background:linear-gradient(130deg,rgba(7,18,38,.85),rgba(12,25,48,.68));overflow:hidden}.step-title{display:flex;align-items:center;gap:10px;padding:12px 13px;border-bottom:1px solid rgba(126,173,240,.11)}.step-num{width:28px;height:28px;border:1px solid rgba(117,186,255,.27);border-radius:9px;display:grid;place-items:center;color:#bcdcff;background:rgba(71,139,233,.1);font-size:11px;font-weight:950;flex:0 0 28px}.step-title h4{font-size:12px;line-height:1.4;margin:0;flex:1}.step-title .btn-copy{flex:0 0 auto}.step-body{padding:13px;color:#dbe9ff;font-size:12px;line-height:1.75;overflow-wrap:anywhere}.step-body pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;margin:0;color:#c9e2ff}.keyline{display:flex;flex-wrap:wrap;gap:6px}.key{display:inline-block;padding:4px 7px;border:1px solid rgba(117,186,255,.22);border-radius:7px;background:rgba(34,69,115,.26);font-size:11px;font-weight:750;color:#e8f4ff}.empty{padding:22px 15px;text-align:center;border:1px dashed rgba(126,173,240,.22);border-radius:14px;color:#879dbc;font-size:12px;line-height:1.7}.note-list{display:grid;gap:9px;counter-reset:note}.info-item{display:flex;gap:12px;align-items:flex-start;padding:14px;border:1px solid rgba(126,173,240,.15);border-radius:13px;background:rgba(4,13,29,.36);color:#c7d9f1;font-size:12px;line-height:1.65}.info-num{width:25px;height:25px;display:grid;place-items:center;flex:0 0 25px;border-radius:8px;background:rgba(77,146,235,.12);border:1px solid rgba(117,186,255,.2);color:#b7d9ff;font-weight:900;font-size:10px}.contact-card{padding:16px;border:1px solid rgba(126,173,240,.16);border-radius:15px;background:rgba(4,13,29,.36);margin-top:10px}.contact-card h3{margin:0 0 7px;font-size:14px}.contact-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}.discord{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;padding:11px 14px;border-radius:12px;background:linear-gradient(110deg,#448ef0,#716cf3);color:#fff;font-size:12px;font-weight:900;margin-top:13px;box-shadow:0 8px 20px rgba(57,120,235,.16)}.footer{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:20px 1px 26px;color:#8297b8;font-size:11px;line-height:1.6}.footer strong{color:#c6ddff;letter-spacing:.05em}.credit{max-width:570px;text-align:right;font-size:10px;color:#7286a5}.toast{position:fixed;left:50%;bottom:18px;transform:translate(-50%,12px);opacity:0;pointer-events:none;background:#132641;border:1px solid rgba(117,186,255,.27);border-radius:999px;padding:10px 15px;color:#ecf6ff;font-size:12px;font-weight:800;box-shadow:0 12px 32px rgba(0,0,0,.3);transition:.2s;z-index:10}.toast.show{opacity:1;transform:translate(-50%,0)}@media(max-width:620px){.wrap{width:min(100% - 18px,980px)}.top{padding-top:13px}.mark{width:41px;height:41px;flex-basis:41px;border-radius:13px}.brand-name{font-size:14px}.status{font-size:10px;padding:7px 9px}.hero{padding:21px 0 19px}.desc{font-size:13px}.workspace{border-radius:19px}.nav{padding:9px;gap:5px}.nav-btn{padding:10px 5px;font-size:11px;gap:5px}.content{padding:15px 12px 18px}.section-head h2{font-size:18px}.section-head p{font-size:11px}.actions .btn{padding:11px 9px}.result-head{align-items:flex-start;flex-direction:column}.result-actions{justify-content:flex-start}.step-title{padding:10px}.step-body{padding:11px;font-size:11px}.footer{flex-direction:column;gap:8px}.credit{text-align:left}.mini-tag{font-size:9px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Readability refresh: show calculator keys as distinct, high-contrast keycaps. */
+.key-help{margin:0 0 12px;padding:10px 12px;border:1px solid rgba(108,231,246,.19);border-radius:11px;background:rgba(25,74,103,.15);color:#bfeaf4;font-size:12px;line-height:1.55}
+.step-body{padding:14px;color:#edf5ff;font-size:14px;line-height:1.65;overflow-wrap:anywhere}
+.step-body pre{white-space:normal;overflow-wrap:anywhere;font:inherit;margin:0;color:inherit}
+.instruction-lines{display:grid;gap:9px}
+.instruction-line{display:flex;flex-wrap:wrap;align-items:center;gap:7px 6px;min-width:0}
+.instruction-line.spacer{height:5px;min-height:5px}
+.keycap{display:inline-flex;align-items:center;justify-content:center;min-height:34px;min-width:35px;padding:6px 9px;border:1px solid rgba(117,186,255,.42);border-radius:9px;background:linear-gradient(180deg,rgba(41,83,137,.65),rgba(22,48,85,.86));box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 2px 0 rgba(0,0,0,.18);color:#f4f9ff;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13px;font-weight:850;line-height:1.2;letter-spacing:.01em;white-space:normal;overflow-wrap:anywhere;text-align:center}
+.keycap.modifier{border-color:rgba(108,231,246,.5);background:linear-gradient(180deg,rgba(20,105,123,.66),rgba(13,65,87,.86));color:#c9fbff}
+.keycap.navkey{border-color:rgba(255,204,125,.48);background:linear-gradient(180deg,rgba(120,81,29,.58),rgba(75,49,22,.76));color:#ffe4b5;min-width:37px;font-size:16px}
+.keycap.number{border-color:rgba(168,154,255,.38);background:linear-gradient(180deg,rgba(80,69,148,.58),rgba(44,39,91,.79));color:#ede8ff;min-width:34px}
+.keycap.longkey{max-width:100%;font-size:12px}
+.keycap.placeholder{border-color:rgba(255,196,115,.45);background:rgba(105,66,23,.28);color:#ffe1b0;font-family:inherit;font-size:12px}
+.key-extra{display:inline-flex;align-items:center;min-height:30px;padding:4px 6px;color:#b8cbe5;font-size:13px;font-weight:750;line-height:1.4;overflow-wrap:anywhere}
+.key-extra.repeat{border-radius:8px;border:1px dashed rgba(168,154,255,.35);background:rgba(91,75,154,.16);color:#d8d0ff;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+.instruction-note{padding:9px 11px;border-radius:10px;border:1px solid rgba(126,173,240,.15);background:rgba(4,13,29,.38);color:#d5e5f8;font-size:13px;line-height:1.6;overflow-wrap:anywhere}
+@media(max-width:620px){.step-body{padding:12px 10px;font-size:14px}.instruction-lines{gap:8px}.instruction-line{gap:7px 6px}.keycap{min-height:36px;min-width:37px;padding:7px 9px;font-size:13px;border-radius:9px}.keycap.modifier{font-size:12px}.keycap.longkey,.keycap.placeholder{font-size:12px}.key-extra{font-size:13px}.key-help{font-size:12px}}
+
+/* DUNGDx RGB · scientific mystic skin */
+:root{
+  --bg:#040712;--panel:#0a1124;--panel2:#080e1d;
+  --line:rgba(117,190,255,.22);--text:#f0f6ff;--muted:#9eafce;
+  --blue:#6aaeff;--cyan:#52f1ed;--violet:#b78bff;--good:#8df5d2;
+  --shadow:0 24px 75px rgba(0,0,0,.42),0 0 55px rgba(73,104,255,.075);
+}
+html{scroll-behavior:smooth;scrollbar-color:#395c91 #070b17}
+body{
+  isolation:isolate;position:relative;
+  background:
+    radial-gradient(ellipse at 8% 6%,rgba(35,111,255,.19),transparent 34%),
+    radial-gradient(ellipse at 93% 15%,rgba(174,71,255,.15),transparent 32%),
+    radial-gradient(ellipse at 50% 68%,rgba(29,221,219,.055),transparent 48%),
+    #040712;
+  background-attachment:fixed;
+}
+body:before{opacity:.17;background-image:radial-gradient(rgba(142,211,255,.75) .8px,transparent .9px);background-size:37px 37px;mask-image:radial-gradient(ellipse at 50% 12%,#000 0%,transparent 76%)}
+body:after{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.13;
+  background-image:linear-gradient(rgba(88,155,255,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(88,155,255,.12) 1px,transparent 1px);
+  background-size:58px 58px;mask-image:radial-gradient(ellipse at 50% 20%,#000,transparent 75%);
+}
+.wrap{z-index:1}
+.mark{position:relative;overflow:hidden;border-color:rgba(91,230,255,.54);background:linear-gradient(145deg,rgba(34,133,255,.24),rgba(170,94,255,.19),rgba(40,229,219,.10));box-shadow:0 0 0 1px rgba(255,255,255,.025) inset,0 0 25px rgba(61,151,255,.22),0 0 44px rgba(179,92,255,.09)}
+.mark:after{content:"";position:absolute;top:-80%;bottom:-80%;left:-45%;width:35%;transform:rotate(25deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);animation:dungdxSweep 7s ease-in-out infinite;pointer-events:none}
+.status{border-color:rgba(82,241,237,.3);background:linear-gradient(110deg,rgba(32,188,207,.09),rgba(136,94,255,.08));box-shadow:inset 0 0 20px rgba(49,201,255,.025)}
+.dot{background:#69f9e3;box-shadow:0 0 7px #4af4ed,0 0 18px rgba(69,249,227,.8)}
+.hero{position:relative;isolation:isolate}
+.hero:before,.hero:after{content:"";position:absolute;left:50%;top:9px;z-index:-1;pointer-events:none;border:1px solid rgba(90,213,255,.105);border-radius:50%;transform:translateX(-50%) rotate(-13deg);width:min(90%,620px);height:190px;box-shadow:0 0 28px rgba(69,132,255,.035),inset 0 0 34px rgba(117,78,255,.025)}
+.hero:after{width:min(78%,520px);height:218px;top:-2px;border-color:rgba(190,116,255,.09);border-style:dashed;transform:translateX(-50%) rotate(24deg);animation:dungdxOrbit 34s linear infinite}
+.eyebrow{border-color:rgba(126,169,255,.34);background:linear-gradient(100deg,rgba(45,140,255,.10),rgba(173,89,255,.095),rgba(67,239,224,.06));box-shadow:0 0 25px rgba(79,143,255,.07),inset 0 0 16px rgba(255,255,255,.018)}
+.hero h1{text-wrap:balance;text-shadow:0 0 34px rgba(87,161,255,.065)}
+.gradient{background-image:linear-gradient(100deg,#f3f7ff 0%,#82ddff 26%,#a99aff 55%,#f0a6ff 74%,#75f5e5 100%);background-size:220% auto;animation:dungdxSpectrum 11s linear infinite;-webkit-background-clip:text;background-clip:text;color:transparent}
+.chip{position:relative;overflow:hidden;border-color:rgba(124,157,255,.25);background:linear-gradient(115deg,rgba(7,17,36,.9),rgba(16,16,42,.82));box-shadow:inset 0 1px 0 rgba(255,255,255,.025);transition:border-color .22s,transform .22s,box-shadow .22s}
+.chip:hover{border-color:rgba(93,235,238,.48);transform:translateY(-1px);box-shadow:0 5px 18px rgba(72,113,255,.1)}
+.workspace{position:relative;isolation:isolate;border-color:rgba(111,166,255,.32);background:linear-gradient(155deg,rgba(12,24,48,.985),rgba(6,12,27,.99) 72%);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.035)}
+.workspace:before{content:"";position:absolute;top:0;left:5%;right:5%;height:2px;z-index:2;background:linear-gradient(90deg,transparent,#55f1ef 16%,#6c9dff 38%,#c18bff 61%,#ff83c8 79%,transparent);background-size:200% 100%;animation:dungdxSpectrum 9s linear infinite;opacity:.85}
+.nav{background:linear-gradient(90deg,rgba(5,12,28,.72),rgba(12,14,32,.8),rgba(5,17,29,.72));border-bottom-color:rgba(118,160,255,.19)}
+.nav-btn{border-color:transparent;transition:color .2s,border-color .2s,background .2s,box-shadow .2s}
+.nav-btn:hover{color:#ecf8ff;background:rgba(83,157,255,.07)}
+.nav-btn.active{border-color:rgba(110,188,255,.4);background:linear-gradient(115deg,rgba(46,151,255,.17),rgba(154,94,255,.17),rgba(51,225,214,.07));box-shadow:0 0 0 1px rgba(255,255,255,.018) inset,0 5px 22px rgba(61,121,255,.1),0 0 20px rgba(153,91,255,.045)}
+.mini-tag{border-color:rgba(92,223,224,.24);background:linear-gradient(105deg,rgba(13,36,57,.55),rgba(28,19,52,.45));color:#bfeaff;letter-spacing:.045em}
+.spell-input{border-color:rgba(112,161,255,.3);background:linear-gradient(140deg,rgba(3,9,22,.82),rgba(10,14,33,.88));box-shadow:inset 0 2px 16px rgba(0,0,0,.12)}
+.spell-input:focus{border-color:rgba(98,228,235,.75);box-shadow:0 0 0 3px rgba(78,207,238,.09),0 0 28px rgba(112,102,255,.08),inset 0 2px 16px rgba(0,0,0,.1)}
+.example,.btn-secondary,.btn-copy{border-color:rgba(120,159,255,.24);background:linear-gradient(120deg,rgba(9,20,41,.88),rgba(18,15,39,.77));transition:border-color .2s,background .2s,box-shadow .2s,transform .2s}
+.example:hover,.btn-secondary:hover,.btn-copy:hover{border-color:rgba(86,226,234,.52);box-shadow:0 0 17px rgba(74,155,255,.08);transform:translateY(-1px)}
+.btn-primary,.discord{position:relative;isolation:isolate;overflow:hidden;border-color:rgba(153,177,255,.58);background:linear-gradient(105deg,#347be9 0%,#6b61ed 48%,#a34ce0 76%,#27bfc8 120%);background-size:180% 100%;box-shadow:0 8px 26px rgba(67,103,255,.2),inset 0 1px 0 rgba(255,255,255,.15);transition:background-position .35s,box-shadow .25s,transform .2s}
+.btn-primary:hover,.discord:hover{background-position:100% 0;box-shadow:0 10px 30px rgba(73,110,255,.24),0 0 20px rgba(64,230,225,.075)}
+.btn:focus-visible,.nav-btn:focus-visible,.example:focus-visible,.btn-copy:focus-visible,.discord:focus-visible{outline:2px solid #5be8ef;outline-offset:3px}
+.step{position:relative;border-color:rgba(115,157,255,.19);background:linear-gradient(125deg,rgba(7,17,38,.92),rgba(12,18,40,.8) 60%,rgba(8,28,39,.72));box-shadow:inset 0 1px 0 rgba(255,255,255,.018);transition:border-color .22s,box-shadow .22s}
+.step:before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:2px;background:linear-gradient(180deg,#55eee8,#788aff 52%,#cb83ff);opacity:.75;border-radius:0 3px 3px 0}
+.step:hover{border-color:rgba(103,193,255,.34);box-shadow:0 6px 24px rgba(34,73,160,.07)}
+.step-num{border-color:rgba(111,189,255,.35);background:linear-gradient(145deg,rgba(40,135,223,.17),rgba(156,84,227,.16));color:#d7f2ff;box-shadow:inset 0 0 14px rgba(100,162,255,.035)}
+.keycap{border-color:rgba(105,172,255,.45);background:linear-gradient(155deg,rgba(37,75,128,.72),rgba(17,30,64,.93));box-shadow:inset 0 1px 0 rgba(255,255,255,.075),0 2px 0 rgba(0,0,0,.22),0 0 12px rgba(68,138,255,.035);transition:border-color .18s,filter .18s}
+.keycap.modifier{border-color:rgba(69,236,225,.53);background:linear-gradient(155deg,rgba(17,109,121,.68),rgba(10,52,72,.92));color:#bffef7;box-shadow:inset 0 1px 0 rgba(255,255,255,.075),0 0 12px rgba(57,228,213,.045)}
+.keycap.navkey{border-color:rgba(255,191,121,.53);background:linear-gradient(155deg,rgba(117,72,36,.63),rgba(58,35,36,.9));color:#ffe4c0}
+.keycap.number{border-color:rgba(177,144,255,.45);background:linear-gradient(155deg,rgba(80,57,145,.66),rgba(34,27,74,.92));color:#f0e8ff}
+.keycap:hover{filter:brightness(1.12)}
+.key-extra{color:#d6dffb}
+.instruction-note{border-color:rgba(141,127,255,.2);background:linear-gradient(110deg,rgba(9,20,41,.72),rgba(24,15,45,.55));box-shadow:inset 2px 0 0 rgba(180,129,255,.45)}
+.info-item,.contact-card{border-color:rgba(115,157,255,.2);background:linear-gradient(125deg,rgba(7,17,36,.72),rgba(14,15,37,.63));box-shadow:inset 0 1px 0 rgba(255,255,255,.02)}
+.contact-card{position:relative;overflow:hidden}
+.contact-card:before{content:"";position:absolute;top:0;left:16px;right:16px;height:1px;background:linear-gradient(90deg,transparent,rgba(82,241,237,.42),rgba(183,139,255,.38),transparent);opacity:.8}
+.footer strong{background:linear-gradient(90deg,#eff5ff,#9be9ff,#c6a2ff);background-clip:text;-webkit-background-clip:text;color:transparent}
+.toast{border-color:rgba(94,211,235,.32);background:linear-gradient(110deg,#101d36,#211538);box-shadow:0 12px 35px rgba(0,0,0,.34),0 0 20px rgba(89,112,255,.08)}
+@keyframes dungdxSpectrum{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+@keyframes dungdxOrbit{0%{transform:translateX(-50%) rotate(24deg)}100%{transform:translateX(-50%) rotate(384deg)}}
+@keyframes dungdxSweep{0%,72%,100%{left:-45%;opacity:0}12%{opacity:.9}32%{left:130%;opacity:0}}
+@media(max-width:620px){.hero:before{width:100%;height:160px;top:6px}.hero:after{width:85%;height:180px;top:-3px}.workspace{box-shadow:0 18px 45px rgba(0,0,0,.38),0 0 34px rgba(69,104,255,.07),inset 0 1px 0 rgba(255,255,255,.035)}.step:before{top:12px;bottom:12px}}
+@media(prefers-reduced-motion:reduce){.gradient,.hero:after,.mark:after,.workspace:before{animation:none!important}*{scroll-behavior:auto!important}}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="brand" href="#top" aria-label="Dungdx Casio Spell">
+<span class="mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="2.5" width="16" height="19" rx="3" stroke="#a8d4ff" stroke-width="1.5"/><rect x="7" y="5.5" width="10" height="4" rx="1" fill="#9ad5ff" fill-opacity=".22" stroke="#a8d4ff" stroke-width="1.1"/><path d="M8 13h2m4 0h2M8 16.5h2m4 0h2" stroke="#b7a9ff" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+<span class="brand-name">Dungdx<small>CASIO SPELL TOOL</small></span></a>
+<div class="status"><span class="dot"></span> FX-580VN X</div>
+</header>
+<section class="hero" id="top">
+<div class="eyebrow">✦ Dungdx Calculator Lab</div>
+<h1>Spell chữ theo cách <span class="gradient">chuẩn gốc</span></h1>
+<p class="desc">Công cụ Spell dành cho CASIO fx-580VN X với giao diện riêng của Dungdx. Nhập câu, bấm Spell và xem hướng dẫn theo từng bước — không cần API hay kết nối máy chủ.</p>
+<div class="chips"><span class="chip">✧ Giao diện xanh huyền ảo</span><span class="chip">↗ Tối ưu điện thoại</span><span class="chip">◈ Chạy offline</span></div>
+</section>
+<main class="workspace" aria-label="Dungdx Spell Tool">
+<nav class="nav" aria-label="Điều hướng">
+<button class="nav-btn active" data-view="spell" type="button">⌁ <span>Spell</span></button>
+<button class="nav-btn" data-view="notes" type="button">ⓘ <span>Ghi chú</span></button>
+<button class="nav-btn" data-view="contact" type="button">◇ <span>Liên hệ</span></button>
+</nav>
+<div class="content">
+<section class="view" id="view-spell">
+<div class="section-head"><div><h2>Nhập câu cần Spell</h2><p>Tối đa 17 ký tự. Kết quả sẽ tự căn giữa như chương trình gốc.</p></div><span class="mini-tag">LOCAL · OFFLINE</span></div>
+<label for="spellInput" class="field-label"><span>Nội dung của bạn</span><span class="counter" id="counter">0 / 17 ký tự</span></label>
+<div class="textarea-wrap"><textarea id="spellInput" class="spell-input" rows="3" placeholder="Ví dụ: Dungdx, Xin chao..." spellcheck="false" autocapitalize="off" autocomplete="off"></textarea></div>
+<p class="field-note">Dùng ký tự có trong bảng mã của công cụ. Một số ký hiệu như $, &, *, dấu gạch chéo ngược và | không có trong dữ liệu gốc nên sẽ được báo khi nhập.</p>
+<div class="examples"><span>Thử nhanh:</span><button class="example" type="button" data-example="Dungdx">Dungdx</button><button class="example" type="button" data-example="Xin chao">Xin chao</button><button class="example" type="button" data-example="Tiếng Việt">Tiếng Việt</button></div>
+<div class="actions"><button class="btn btn-primary" id="spellBtn" type="button">✧ <span>Tạo hướng dẫn Spell</span></button><button class="btn btn-secondary" id="clearBtn" type="button">Xóa</button></div>
+<div class="error" id="error" role="alert" hidden></div>
+<div id="resultArea" hidden>
+<div class="result-head"><div><h3>Hướng dẫn trên máy tính</h3><p id="resultSummary">Đã tạo các bước thực hiện.</p></div><div class="result-actions"><button class="btn-copy" id="copyAll" type="button">▣ Sao chép tất cả</button><button class="btn-copy" id="copyInput" type="button">Sao chép câu</button></div></div>
+<p class="key-help">Mỗi ô là một phím trên máy Casio. SHIFT, ALPHA và CALC được tô màu riêng; mũi tên chỉ phím điều hướng. Nút “Sao chép” vẫn sao chép hướng dẫn nguyên bản.</p><div class="steps" id="steps"></div>
+</div>
+<div class="empty" id="emptyState">Kết quả sẽ xuất hiện ở đây sau khi bạn bấm <b>Tạo hướng dẫn Spell</b>.</div>
+</section>
+<section class="view" id="view-notes" hidden>
+<div class="section-head"><div><h2>Ghi chú công cụ</h2><p>Các lưu ý được giữ theo nội dung tệp gốc bạn cung cấp.</p></div><span class="mini-tag">READ ME</span></div>
+<div class="note-list" id="notesList"></div>
+<div class="contact-card"><h3>Phạm vi hỗ trợ</h3><p>Công cụ này được thiết kế cho CASIO fx-580VN X. Kết quả là chuỗi hướng dẫn thao tác phím; hãy tự kiểm tra từng bước trên máy của bạn.</p></div>
+</section>
+<section class="view" id="view-contact" hidden>
+<div class="section-head"><div><h2>Liên hệ & cộng đồng</h2><p>Khu vực dành cho thương hiệu Dungdx.</p></div><span class="mini-tag">Dungdx</span></div>
+<div class="contact-card"><h3>Discord server Dungdx</h3><p>Tham gia server để theo dõi cập nhật và trao đổi về các dự án của Dungdx.</p><a class="discord" href="https://discord.gg/jbCzvtmSZt" target="_blank" rel="noopener noreferrer">◈ Vào server Discord ↗</a></div>
+<div class="contact-card"><h3>📂 Giao diện &amp; tùy biến</h3><p>Giao diện và phần tùy biến do Dungdx thực hiện. Cấm hành vi ăn cắp qua mọi hình thức.</p></div>
+<div class="contact-card"><h3>Liên hệ theo tệp mã nguồn mới nhất</h3><p id="contactsText"></p></div>
+</section>
+</div>
+</main>
+<footer class="footer"><div><strong>by Dungdx</strong><br><span>Personal Casio Spell Hub</span></div></footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+'use strict';
+const ALL_HEX = {" ":"20","/":"2F","A":"41","B":"42","C":"43","D":"44","E":"45","F":"46","G":"47","H":"48","I":"49","J":"4A","K":"4B","L":"4C","M":"4D","N":"4E","O":"4F","P":"50","Q":"51","R":"52","S":"53","T":"54","U":"55","V":"56","W":"57","X":"58","Y":"59","Z":"5A","a":"61","b":"62","c":"63","d":"64","e":"65","f":"66","g":"67","h":"68","i":"69","j":"6A","k":"6B","l":"6C","m":"6D","n":"6E","o":"6F","p":"70","q":"71","r":"72","s":"73","t":"74","u":"75","v":"76","w":"77","x":"78","y":"79","z":"7A","0":"30","1":"31","2":"32","3":"33","4":"34","5":"35","6":"36","7":"37","8":"38","9":"39","Ạ":"F4 10","Ắ":"F4 11","Ằ":"F4 12","Ặ":"F4 13","Ấ":"F4 14","Ầ":"F4 15","Ẩ":"F4 16","Ậ":"F4 17","Ẽ":"F4 18","Ẹ":"F4 19","Ế":"F4 1A","Ề":"F4 1B","Ể":"F4 1C","Ễ":"F4 1D","Ệ":"F4 1E","Ố":"F4 1F","Ồ":"F4 20","Ổ":"F4 21","Ỗ":"F4 22","Ộ":"F4 23","Ợ":"F4 24","Ớ":"F4 25","Ờ":"F4 26","Ở":"F4 27","Ị":"F4 28","Ỏ":"F4 29","Ọ":"F4 2A","Ỉ":"F4 2B","Ủ":"F4 2C","Ũ":"F4 2D","Ụ":"F4 2E","Ỳ":"F4 2F","Õ":"F4 30","ắ":"F4 31","ằ":"F4 32","ặ":"F4 33","ấ":"F4 34","ầ":"F4 35","ẩ":"F4 36","ậ":"F4 37","ẽ":"F4 38","ẹ":"F4 39","ế":"F4 3A","ề":"F4 3B","ể":"F4 3C","ễ":"F4 3D","ệ":"F4 3E","ố":"F4 3F","ồ":"F4 40","ổ":"F4 41","ỗ":"F4 42","Ỡ":"F4 43","Ơ":"F4 44","ộ":"F4 45","ờ":"F4 46","ở":"F4 47","ị":"F4 48","Ự":"F4 49","Ứ":"F4 4A","Ừ":"F4 4B","Ử":"F4 4C","ơ":"F4 4D","ớ":"F4 4E","Ư":"F4 4F","À":"F4 50","Á":"F4 51","Â":"F4 52","Ã":"F4 53","Ả":"F4 54","Ă":"F4 55","ẳ":"F4 56","ẵ":"F4 57","È":"F4 58","É":"F4 59","Ê":"F4 5A","Ẻ":"F4 5B","Ì":"F4 5C","Í":"F4 5D","Ĩ":"F4 5E","ỳ":"F4 5F","Đ":"F4 60","ứ":"F4 61","Ò":"F4 62","Ó":"F4 63","Ô":"F4 64","ạ":"F4 65","ỷ":"F4 66","ừ":"F4 67","ử":"F4 68","Ù":"F4 69","Ú":"F4 6A","ỹ":"F4 6B","ỵ":"F4 6C","Ý":"F4 6D","ỡ":"F4 6E","ư":"F4 6F","à":"F4 70","á":"F4 71","â":"F4 72","ã":"F4 73","ả":"F4 74","ă":"F4 75","ữ":"F4 76","ẫ":"F4 77","è":"F4 78","é":"F4 79","ê":"F4 7A","ẻ":"F4 7B","ì":"F4 7C","í":"F4 7D","ĩ":"F4 7E","ỉ":"F4 7F","đ":"F4 80","ự":"F4 81","ò":"F4 82","ó":"F4 83","ô":"F4 84","õ":"F4 85","ỏ":"F4 86","ọ":"F4 87","ụ":"F4 88","ù":"F4 89","ú":"F4 8A","ũ":"F4 8B","ủ":"F4 8C","ý":"F4 8D","ợ":"F4 8E","Ữ":"F4 8F","Ẳ":"F4 90","Ẵ":"F4 91","Ẫ":"F4 92","Ỷ":"F4 93","Ỹ":"F4 94","Ỵ":"F4 95","!":"21","\"":"22","#":"23","×":"24","%":"25","÷":"26","'":"27","(":"28",")":"29","·":"2A","+":"2B",",":"2C","—":"2D",".":"2E",":":"3A",";":"3B","<":"3C","=":"3D",">":"3E","?":"3F","@":"40","[":"5B","▫":"5C","]":"5D","^":"5E","_":"5F","-":"60","{":"7B","}":"7D","~":"7E","⊢":"7F","𝒊":"80","𝓮":"81","¹⁰":"83","∞":"84","°":"85","∠":"88","𝑥̄":"89","𝑦̄":"8A","→":"8D","∏":"8E","⇒":"8F","≤":"94","≠":"95","≥":"96","▮":"CC","▯":"CD"};
+const CHARS_HEX = {"/":"2F","L":"4C","M":"4D","N":"4E","O":"4F","T":"54","U":"55","V":"56","W":"57","X":"58","Y":"59","Z":"5A","a":"61","b":"62","c":"63","d":"64","e":"65","f":"66","g":"67","j":"6A","k":"6B","Ạ":"F4 10","Ắ":"F4 11","Ằ":"F4 12","Ặ":"F4 13","Ấ":"F4 14","Ầ":"F4 15","Ẩ":"F4 16","Ậ":"F4 17","Ẽ":"F4 18","Ẹ":"F4 19","Ế":"F4 1A","Ề":"F4 1B","Ể":"F4 1C","Ễ":"F4 1D","Ệ":"F4 1E","Ố":"F4 1F","Ồ":"F4 20","Ổ":"F4 21","Ỗ":"F4 22","Ộ":"F4 23","Ợ":"F4 24","Ớ":"F4 25","Ờ":"F4 26","Ở":"F4 27","Ị":"F4 28","Ỏ":"F4 29","Ọ":"F4 2A","Ỉ":"F4 2B","Ủ":"F4 2C","Ũ":"F4 2D","Ụ":"F4 2E","Ỳ":"F4 2F","Õ":"F4 30","ắ":"F4 31","ằ":"F4 32","ặ":"F4 33","ấ":"F4 34","ầ":"F4 35","ẩ":"F4 36","ậ":"F4 37","ẽ":"F4 38","ẹ":"F4 39","ế":"F4 3A","ề":"F4 3B","ể":"F4 3C","ễ":"F4 3D","ệ":"F4 3E","ố":"F4 3F","ồ":"F4 40","ổ":"F4 41","ỗ":"F4 42","Ỡ":"F4 43","Ơ":"F4 44","ộ":"F4 45","ờ":"F4 46","ở":"F4 47","ị":"F4 48","Ự":"F4 49","Ứ":"F4 4A","Ừ":"F4 4B","Ử":"F4 4C","ơ":"F4 4D","ớ":"F4 4E","Ư":"F4 4F","À":"F4 50","Á":"F4 51","Â":"F4 52","Ã":"F4 53","Ả":"F4 54","Ă":"F4 55","ẳ":"F4 56","ẵ":"F4 57","È":"F4 58","É":"F4 59","Ê":"F4 5A","Ẻ":"F4 5B","Ì":"F4 5C","Í":"F4 5D","Ĩ":"F4 5E","ỳ":"F4 5F","Đ":"F4 60","ứ":"F4 61","Ò":"F4 62","Ó":"F4 63","Ô":"F4 64","ạ":"F4 65","ỷ":"F4 66","ừ":"F4 67","ử":"F4 68","Ù":"F4 69","Ú":"F4 6A","ỹ":"F4 6B","ỵ":"F4 6C","Ý":"F4 6D","ỡ":"F4 6E","ư":"F4 6F","à":"F4 70","á":"F4 71","â":"F4 72","ã":"F4 73","ả":"F4 74","ă":"F4 75","ữ":"F4 76","ẫ":"F4 77","è":"F4 78","é":"F4 79","ê":"F4 7A","ẻ":"F4 7B","ì":"F4 7C","í":"F4 7D","ĩ":"F4 7E","ỉ":"F4 7F","đ":"F4 80","ự":"F4 81","ò":"F4 82","ó":"F4 83","ô":"F4 84","õ":"F4 85","ỏ":"F4 86","ọ":"F4 87","ụ":"F4 88","ù":"F4 89","ú":"F4 8A","ũ":"F4 8B","ủ":"F4 8C","ý":"F4 8D","ợ":"F4 8E","Ữ":"F4 8F","Ẳ":"F4 90","Ẵ":"F4 91","Ẫ":"F4 92","Ỷ":"F4 93","Ỹ":"F4 94","Ỵ":"F4 95","×":"24","%":"25","÷":"26","'":"27","(":"28",")":"29","·":"2A","+":"2B",",":"2C","—":"2D",".":"2E",":":"3A",";":"3B","<":"3C","=":"3D",">":"3E","?":"3F","@":"40","[":"5B","▫":"5C","]":"5D","^":"5E","_":"5F","-":"60","{":"7B","}":"7D","~":"7E","⊢":"7F","𝒊":"80","𝓮":"81","¹⁰":"83","∞":"84","°":"85","∠":"88","𝑥̄":"89","𝑦̄":"8A","→":"8D","∏":"8E","⇒":"8F","≤":"94","≠":"95","≥":"96","▮":"CC","▯":"CD"};
+const CHARS_KEY = {" ":"[shift] [8] [3] [4]","A":"[Ans]","B":"[alpha] [(-)]","C":"[alpha] [□ '  \"]","D":"[alpha] [x⁻¹]","E":"[alpha] [sin]","F":"[alpha] [cos]","G":"[alpha] [tan]","H":"[x]","I":"[alpha] [)]","J":"[alpha] [Ans]","K":"[alpha] [S<=>D]","P":"[shift] [x]","Q":"[∫]","R":"[shift] [∫]","S":"[alpha] [x]","h":"[shift] [(]","i":"[shift] [0]","l":"[OPTN] [1] [1]","m":"[OPTN] [1] [2]","n":"[OPTN] [1] [3]","o":"[OPTN] [1] [4]","p":"[OPTN] [1] [5]","q":"[OPTN] [1] [6]","r":"[shift] [ln]","s":"[shift] [log▪□]","t":"[√]","u":"[ln]","v":"[shift] [√]","w":"[sin]","x":"[cos]","y":"[tan]","z":"[shift] [sin]","0":"[0]","1":"[1]","2":"[2]","3":"[3]","4":"[4]","5":"[5]","6":"[6]","7":"[7]","8":"[8]","9":"[9]","!":"[alpha] [×10ˣ]","\"":"[shift] [×10ˣ]","#":"[alpha] [∫]"};
+const TAKE_CHARS = {"A":"[shift] [7] [3] [7]","B":"[shift] [7] [3] [8]","C":"[shift] [7] [3] [9]","D":"[shift] [7] [3] [(-)]","E":"[shift] [7] [3] [□ ' \"]","F":"[shift] [7] [3] [x⁻¹]"};
+const NOTES = ["Tool hoàn toàn miễn phí, nghiêm cấm buôn bán hoặc sử dụng để trục lợi.","Không được chỉnh sửa hoặc xóa tên tác giả.","Nghiêm cấm sao chép hoặc phát tán trái phép dưới mọi hình thức.","Tool chỉ hỗ trợ spell tối đa 17 byte và ký tự.","Chỉ hỗ trợ CASIO fx-580VN X, các dòng máy khác có thể không hoạt động.","Không nên phụ thuộc hoàn toàn vào tool.","Tool có thể phát sinh lỗi trong quá trình sử dụng.","Nếu gặp lỗi, vui lòng liên hệ để được hỗ trợ."];
+const CONTACTS = ["Discord: Dungdx.","Discord: Blox Community VN ."];
+const HEX_CHAR_LIST = ['a','b','c','d','e','f','g','j','k','L','M','N','O','T','U','V','W','X','Y','Z'];
+const ASCII_LETTERS = /^[A-Za-z]$/;
+const isDigit = ch => /^\p{N}$/u.test(ch);
+const has = (obj,key) => Object.prototype.hasOwnProperty.call(obj,key);
+const $ = id => document.getElementById(id);
+let lastResult = null;
+let toastTimer = null;
+
+function showToast(message){const node=$('toast');node.textContent=message;node.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>node.classList.remove('show'),1800);}
+async function copyText(text){
+  try{if(navigator.clipboard && window.isSecureContext){await navigator.clipboard.writeText(text);}else{const temp=document.createElement('textarea');temp.value=text;temp.setAttribute('readonly','');temp.style.position='fixed';temp.style.opacity='0';document.body.appendChild(temp);temp.select();const ok=document.execCommand('copy');temp.remove();if(!ok)throw new Error('copy failed');}showToast('Đã sao chép vào bộ nhớ tạm');}
+  catch(e){showToast('Không sao chép được — hãy chọn và sao chép thủ công');}
+}
+function centerTo17(input){const chars=Array.from(input);const remaining=17-chars.length;const left=Math.floor(remaining/2);const right=remaining-left;return [...Array(left).fill(' '),...chars,...Array(right).fill(' ')];}
+function classifyChars(chars){
+ const charsByHex=[],charsByKey=[],errors=[];
+ for(const ch of chars){
+   if(ch===' ') continue;
+   if(HEX_CHAR_LIST.includes(ch)){charsByHex.push(ch);continue;}
+   // Use explicit key entries when the source provides a real key sequence (e.g. !, ", #).
+   if(has(CHARS_KEY,ch)){charsByKey.push(ch);continue;}
+   if(ASCII_LETTERS.test(ch)){
+      if(has(CHARS_HEX,ch)||has(ALL_HEX,ch)) charsByHex.push(ch);
+      else errors.push(ch);
+      continue;
+   }
+   if(isDigit(ch)){
+      if(has(CHARS_KEY,ch)) charsByKey.push(ch); else errors.push(ch);
+      continue;
+   }
+   if(has(CHARS_HEX,ch)){charsByHex.push(ch);continue;}
+   if(has(ALL_HEX,ch)){charsByHex.push(ch);continue;}
+   errors.push(ch);
+ }
+ return {charsByHex,charsByKey,errors};
+}
+function fillHex(hexList){
+ const A=['1.0000','__','__','_!','!_','__','×10','!!'];
+ const B=['1.','__','__','__','_!','!_','__','×10','!!'];
+ const C=['1.','__','__','__','_!','!_','__','×10','!!'];
+ const bytes=[];
+ for(let item of hexList){if(item.length===5)item=item.replace(' ','');for(let i=0;i<item.length;i+=2)bytes.push(item.slice(i,i+2));}
+ if(bytes.length>20)return {filled:[' x:\n'],id:0,status:false,bytes};
+ let pos=0,pos1=0,id=0;const filled=[' x:\n'];
+ for(let i=0;i<100;i++){
+   const slots=id===0?A:id===1?B:id===2?C:null;
+   if(!slots||pos1>=slots.length)return {filled,id,status:false,bytes,error:'Không thể phân bố byte vào các biến A, B, C theo mẫu gốc.'};
+   const slot=slots[pos1];
+   if(slot==='1.0000'||slot==='1.'){
+      if(id===0)filled.push('A = ');if(id===1)filled.push('B = ');if(id===2)filled.push('C = ');
+      filled.push(slot);pos1++;
+   }
+   if(slot==='×10'){filled.push(slot);pos1++;}
+   else{
+      const byte=bytes[pos];
+      if(byte===undefined)break;
+      if(slot==='__'){filled.push(byte);pos++;pos1++;}
+      else if(slot==='_!'){if(/[A-Za-z]/.test(byte[1]||'')){filled.push('20');}else{filled.push(byte);pos++;}pos1++;}
+      else if(slot==='!_'){if(/[A-Za-z]/.test(byte[0]||'')){filled.push('20');}else{filled.push(byte);pos++;}pos1++;}
+      else if(slot==='!!'){
+        if(/^\d+$/.test(byte)){filled.push(byte);filled.push('\n');pos++;}
+        else if(/[A-Za-z]/.test(byte[0]||'')||/[A-Za-z]/.test(byte[1]||'')){
+          if(bytes[pos-1]==='F4'){
+            const prevIndex=filled.indexOf(bytes[pos-1]);if(prevIndex>=0)filled.splice(prevIndex,1);
+            filled.splice(Math.max(0,pos-1),0,'20');pos--;filled.push('20');
+          }else filled.push('20');
+          filled.push('\n');
+        }
+        pos1=0;id++;
+      }
+   }
+   if(bytes.length===pos)break;
+ }
+ if(filled.length-6>20)return {filled,id,status:false,bytes};
+ return {filled,id,status:true,bytes};
+}
+function tokensForAssignment(listLo){
+ const tokens=[];let count=0;
+ for(const byte of listLo){
+   if(byte===' n\\ 1.0000')tokens.push(' n\\ [alpha] [(-)] [alpha] [CALC]');
+   else if(byte==='1.'){
+     if(count===0){tokens.push('\n [alpha] [∫] [alpha] [□ \' "]');count++;}
+     else if(count===1){tokens.push('\n [alpha] [∫] [alpha] [x⁻¹]');count++;}
+   }else if(byte===' n\\ x:')tokens.push(' n\\ [x] [alpha] [∫]');
+   else if(byte===' '){}
+   else{
+     for(const ch of Array.from(byte)){
+       if(/^\d$/.test(ch))tokens.push(`[${ch}]`);
+       else if(['A','B','C','D','E','F'].includes(ch))tokens.push('[>]');
+       else if(ch==='.')tokens.push('[.]');
+       else if(byte==='×10'){tokens.push('[×10]');break;}
+     }
+   }
+ }
+ return tokens.join(' ');
+}
+function tokensForDelete(listLo){
+ const reverse=listLo.slice().reverse();let idx=reverse.indexOf(' x:\n');if(idx>=0)reverse.splice(idx,1);idx=reverse.indexOf('\n');if(idx>=0)reverse.splice(idx,1);
+ let count=0;const out=[];
+ for(const item of reverse){
+   if(item==='20'){out.push(count===0?'[DEL]':`[<]x${count} [DEL]`);count=0;}
+   else if(item==='1.'){out.push(count===0?'[DEL]x2':`[<]x${count} [DEL]x2`);count=0;}
+   else if(item==='1.0000'){if(count!==0)out.push(`[<]x${count}`);count=0;}
+   else if(item==='×10'||item==='F4'){}
+   else count++;
+ }
+ return out.join(' ');
+}
+function textStep(title,body){return {title,body};}
+function generate(input){
+ const inputChars=Array.from(input);
+ if(inputChars.length>17)throw new Error(`Câu quá dài: ${inputChars.length}/17 ký tự. Hãy rút ngắn câu rồi thử lại.`);
+ const dsChu=centerTo17(input);
+ const {charsByHex,charsByKey,errors}=classifyChars(dsChu);
+ if(errors.length){const chars=[...new Set(errors)].map(c=>c===' '?'dấu cách':`“${c}”`).join(', ');throw new Error(`Bảng mã gốc không có dữ liệu cho: ${chars}. Hãy thay bằng ký tự được hỗ trợ.`);}
+ const hexList=[];for(const ch of charsByHex){if(has(CHARS_HEX,ch))hexList.push(CHARS_HEX[ch]);else if(has(ALL_HEX,ch))hexList.push(ALL_HEX[ch]);else throw new Error(`Không tìm thấy mã HEX cho ký tự “${ch}”.`);}
+ const foundKeys={};for(const ch of charsByKey){if(has(CHARS_KEY,ch))foundKeys[ch]=CHARS_KEY[ch];else throw new Error(`Không tìm thấy phím cho ký tự “${ch}”.`);}
+ const hexChars=[];for(const value of hexList){for(const ch of Array.from(value)){if(['A','B','C','D','E','F'].includes(ch))hexChars.push(ch);}}
+ hexChars.push('C');hexList.push('3C','23');
+ const foundHexChars={};for(const char of hexChars){if(has(TAKE_CHARS,char))foundHexChars[char]=TAKE_CHARS[char];}
+ const fillResult=fillHex(hexList);
+ if(!fillResult.status){if(fillResult.bytes.length>20)throw new Error(`Lỗi quá nhiều byte (${fillResult.bytes.length}). Câu này vượt giới hạn của mẫu gốc; hãy thử câu ngắn hơn hoặc ít ký tự dấu hơn.`);throw new Error(fillResult.error||'Không thể lấp byte vào mẫu biến A, B, C của bản gốc.');}
+ const filled=fillResult.filled.slice();const listLo=filled.slice();
+ for(const label of ['A = ','B = ','C = ']){let n;while((n=listLo.indexOf(label))>=0)listLo.splice(n,1);}
+ const step4=[...hexChars.map(ch=>foundHexChars[ch]||''),'',`([<] [9] [DEL])×${hexChars.length} [del] [del] [del] ([<])×${hexChars.length} [alpha] [∫]`].filter((v,i,a)=> !(v==='' && (i===a.length-2 || i===a.length-1))).join(' ');
+ const assign=tokensForAssignment(listLo);
+ const deleteTokens=tokensForDelete(listLo);
+ const id=fillResult.id;
+ const steps=[];
+ steps.push(textStep('Reset máy','[shift] [9] [3] [=] [=]'));
+ steps.push(textStep('Vào Line I/O','[shift] [menu] [1] [3]'));
+ steps.push(textStep('Vào Basic Overflow','[x] [alpha] [CALC] [shift] [x] [x] [shift] [)] [9] [shift] [)] [9] [9] [9] [CALC] [=] [AC] [<] [del] [del] [CALC] [=] [<] [shift] [.]'));
+ steps.push(textStep('Lấy các ký tự HEX cần thiết',`${hexChars.map(ch=>foundHexChars[ch]||'').filter(Boolean).join('  ')}\n\n([<] [9] [DEL])×${hexChars.length} [del] [del] [del] ([<])×${hexChars.length} [alpha] [∫]`));
+ steps.push(textStep('Gán HEX vào biến',`${assign}\n\n[CALC] ([=])×${id+2}`));
+ steps.push(textStep('Lấy “an”',"[x] [alpha] [CALC] [shift] [x] [x] [shift] [)] [9] [shift] [)] [9] [CALC] [=] [<] [shift] [.] [shift] [.] [<] [<] [DEL] [v] [shift] [8] [v] [2] [6] [<] [<] [>] [9] [DEL] [<] [)] [+] [100 số bất kì] [CALC] [=]"));
+ steps.push(textStep('Lấy ký tự “@”','[x] [alpha] [CALC] [shift] [x] [x] [shift] [)] [9] [shift] [)] [9] [CALC] [=] [<] [shift] [.]'));
+ if(id===0){steps.push(textStep('Chuẩn bị biến chứa chữ','[shift] [7] [4] [8]\n([<] [9] [DEL])×1\n[DEL]×10\n[<] [9 số bất kì] [>] [alpha] [∫] [>] [alpha] [CALC] [alpha] [(-)]\n[CALC] ([=])×2 [^]'));}
+ else if(id===1){steps.push(textStep('Chuẩn bị biến chứa chữ','[shift] [7] [4] [8] [shift] [7] [4] [9]\n([<] [9] [DEL])×2\n[DEL]×10\n[<] [9 số bất kì] [>] [alpha] [∫] [>] [alpha] [CALC] [alpha] [(-)] [alpha] [∫] [>] [alpha] [CALC] [alpha] [□ \' "]\n[CALC] ([=])×3 [^]'));}
+ else if(id===2){steps.push(textStep('Chuẩn bị biến chứa chữ','[shift] [7] [4] [8] [shift] [7] [4] [9] [shift] [7] [1] [4]\n([<] [9] [DEL])×3\n[DEL]×10\n[<] [9 số bất kì] [>] [alpha] [∫] [>] [alpha] [CALC] [alpha] [(-)] [alpha] [∫] [>] [alpha] [CALC] [alpha] [□ \' "] [alpha] [∫] [>] [alpha] [CALC] [alpha] [x⁻¹]\n[CALC] ([=])×4 [^]'));}
+ steps.push(textStep('Xóa các byte thừa',deleteTokens||'(Không cần xóa thêm byte theo mẫu này)'));
+ let b=0;const inputKeySteps=[];
+ for(const ch of dsChu){
+   if(has(foundKeys,ch))inputKeySteps.push(foundKeys[ch]);
+   else if(ch===' '){inputKeySteps.push('[shift] [8] [3] [4]');b++;}
+   else if(!ASCII_LETTERS.test(ch)){inputKeySteps.push('[>]');b++;}
+   else if(charsByHex.includes(ch))inputKeySteps.push('[>]');
+ }
+ steps.push(textStep('Nhập câu cần Spell',`${inputKeySteps.join(' ')}\n\n[${17-b} số bất kì] [shift] [(] [2] [x] [calc] [=]`));
+ return {input,centered:dsChu.join(''),steps,bytes:fillResult.bytes,variables:id+1,allText:steps.map((s,i)=>`BƯỚC ${i+1}: ${s.title}\n${s.body}`).join('\n\n'),note:`Đã tạo ${steps.length} bước. Chuỗi đã căn giữa thành 17 ký tự; mẫu sử dụng ${id+1} biến (A${id>=1?', B':''}${id>=2?', C':''}).`};
+}
+function buildReadableInstructions(target, rawText){
+ const lines=String(rawText).split('\n');
+ for(const lineText of lines){
+   if(!lineText.trim()){
+     const spacer=document.createElement('div');spacer.className='instruction-line spacer';spacer.setAttribute('aria-hidden','true');target.append(spacer);continue;
+   }
+   const matches=[...lineText.matchAll(/\[[^\]]+\]/g)];
+   if(matches.length===0){
+     const note=document.createElement('div');note.className='instruction-note';note.textContent=lineText.trim();target.append(note);continue;
+   }
+   const row=document.createElement('div');row.className='instruction-line';let cursor=0;
+   const addExtra=(text)=>{
+     const clean=text.trim();if(!clean)return;
+     const extra=document.createElement('span');extra.className='key-extra';
+     if(/^([()×xX0-9^=+.,/\-]|\s)+$/.test(clean)||/^×\d+/u.test(clean))extra.classList.add('repeat');
+     extra.textContent=clean;row.append(extra);
+   };
+   for(const match of matches){
+     addExtra(lineText.slice(cursor,match.index));
+     const raw=match[0].slice(1,-1).trim();const lower=raw.toLowerCase();
+     const cap=document.createElement('span');cap.className='keycap';
+     let label=raw;
+     if(['shift','alpha','calc','menu','del','optn'].includes(lower)){label=lower.toUpperCase();cap.classList.add('modifier');}
+     else if(lower==='ans'){label='Ans';cap.classList.add('modifier');}
+     else if(raw==='<'){label='◀';cap.classList.add('navkey');cap.setAttribute('aria-label','phím trái');}
+     else if(raw==='>'){label='▶';cap.classList.add('navkey');cap.setAttribute('aria-label','phím phải');}
+     else if(raw.toLowerCase()==='v'){label='▼';cap.classList.add('navkey');cap.setAttribute('aria-label','phím xuống');}
+     else if(/^\d+$/.test(raw)||['.','=', '+','^','(-)'].includes(raw)){cap.classList.add('number');}
+     else if(/số bất kì/i.test(raw)){label=raw.replace(/số bất kì/i,'số bất kỳ');cap.classList.add('placeholder','longkey');}
+     else if(raw.length>7){cap.classList.add('longkey');}
+     cap.textContent=label;cap.title=match[0];row.append(cap);cursor=match.index+match[0].length;
+   }
+   addExtra(lineText.slice(cursor));target.append(row);
+ }
+}
+function renderResult(result){lastResult=result;$('steps').replaceChildren();result.steps.forEach((step,index)=>{
+ const card=document.createElement('article');card.className='step';
+ const title=document.createElement('div');title.className='step-title';
+ const number=document.createElement('span');number.className='step-num';number.textContent=String(index+1).padStart(2,'0');
+ const heading=document.createElement('h4');heading.textContent=step.title;
+ const copy=document.createElement('button');copy.type='button';copy.className='btn-copy';copy.textContent='Sao chép';copy.addEventListener('click',()=>copyText(`BƯỚC ${index+1}: ${step.title}\n${step.body}`));
+ title.append(number,heading,copy);
+ const body=document.createElement('div');body.className='step-body';const instructions=document.createElement('div');instructions.className='instruction-lines';buildReadableInstructions(instructions,step.body);body.append(instructions);card.append(title,body);$('steps').append(card);
+ });
+ $('resultSummary').textContent=result.note;$('resultArea').hidden=false;$('emptyState').hidden=true;
+}
+function spellNow(){const input=$('spellInput').value;$('error').hidden=true;try{const result=generate(input);renderResult(result);}catch(err){$('resultArea').hidden=true;$('emptyState').hidden=false;$('emptyState').textContent='Chỉnh câu nhập rồi bấm tạo hướng dẫn lại nhé.';$('error').textContent=err.message||'Đã xảy ra lỗi khi tạo hướng dẫn.';$('error').hidden=false;}}
+function updateCounter(){const n=Array.from($('spellInput').value).length;$('counter').textContent=`${n} / 17 ký tự`;$('counter').style.color=n>17?'var(--bad)':'var(--muted)';$('spellBtn').disabled=n>17;}
+function setView(view){document.querySelectorAll('.nav-btn').forEach(btn=>btn.classList.toggle('active',btn.dataset.view===view));document.querySelectorAll('.view').forEach(el=>el.hidden=el.id!==`view-${view}`);}
+document.querySelectorAll('.nav-btn').forEach(btn=>btn.addEventListener('click',()=>setView(btn.dataset.view)));
+document.querySelectorAll('.example').forEach(btn=>btn.addEventListener('click',()=>{$('spellInput').value=btn.dataset.example;updateCounter();setView('spell');spellNow();}));
+$('spellInput').addEventListener('input',updateCounter);$('spellBtn').addEventListener('click',spellNow);$('clearBtn').addEventListener('click',()=>{$('spellInput').value='';updateCounter();$('error').hidden=true;$('resultArea').hidden=true;$('emptyState').hidden=false;$('emptyState').textContent='Kết quả sẽ xuất hiện ở đây sau khi bạn bấm Tạo hướng dẫn Spell.';lastResult=null;});
+$('copyAll').addEventListener('click',()=>{if(lastResult)copyText(lastResult.allText);});$('copyInput').addEventListener('click',()=>copyText($('spellInput').value));
+NOTES.forEach((note,i)=>{const item=document.createElement('div');item.className='info-item';const num=document.createElement('span');num.className='info-num';num.textContent=String(i+1).padStart(2,'0');const text=document.createElement('span');text.textContent=note;item.append(num,text);$('notesList').append(item);});
+$('contactsText').textContent=CONTACTS.join(' ');updateCounter();
+</script>
+</body>
+</html>
